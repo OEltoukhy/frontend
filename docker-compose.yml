@@ -1,0 +1,11 @@
+version: '3.8'  
+services:
+  frontend-app:
+    container_name: frontend
+    build:
+      context: .
+      target: FIRST
+    ports:
+      - "8080:80"  
+    environment:
+      - NODE_ENV=FIRST  
